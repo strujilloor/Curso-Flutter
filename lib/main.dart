@@ -1,4 +1,9 @@
+import 'package:curso_flutter/src/app.dart';
+
+// Importaciones de nuestro archivos
+// import 'src/app.dart'; Puede importarse de esta manera
 import 'package:flutter/material.dart';
+
 
 void main() {
 
@@ -7,16 +12,3 @@ void main() {
 
 }
 
-class MyApp extends StatelessWidget {
-
-  // definir un método build a fuerza
-  @override
-  Widget build( context ) { // context: contiene la información del arbol de widgets
-    return MaterialApp(
-      home: Center(
-        child: Text('hola mundo'),
-      ),
-    );
-  }
-
-}
