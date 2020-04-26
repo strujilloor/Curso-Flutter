@@ -5,6 +5,8 @@ class HomePage extends StatelessWidget{
   final estiloTexto =  new TextStyle(fontSize: 23); // definimos una variable de estilo para no reutilizar código y asignarlo a los Text
   final colorFondo = Colors.orange;
 
+  int conteo = 20;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,12 +21,14 @@ class HomePage extends StatelessWidget{
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Text('Número de clicks!:', style: estiloTexto,), // aquí
-            Text('0', style: estiloTexto,)
+            Text( '$conteo', style: estiloTexto, ) // interpolación de String
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => print('hola mundo'),
+        onPressed: () {
+          conteo = conteo + 1;
+        },
         tooltip: 'Incrementa el contador', // describe la acción que ocurrirá cuando se presione el botón
         child: Icon(Icons.directions_run), // la clase Icons tiene como propiedades estaticas los iconos
         backgroundColor: colorFondo,
