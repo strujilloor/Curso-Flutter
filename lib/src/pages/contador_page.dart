@@ -32,18 +32,34 @@ class _ContadorPageState extends State {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-
-          setState(() {
-            _conteo++;  
-          });
-        },
-        tooltip: 'Incrementa el contador', // describe la acción que ocurrirá cuando se presione el botón
-        child: Icon(Icons.directions_run), // la clase Icons tiene como propiedades estaticas los iconos
-        backgroundColor: _colorFondo,
-      ),
+      floatingActionButton: _crearBotones(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
+  }
+
+  Widget _crearBotones() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: <Widget>[
+        SizedBox(width: 30,),
+        FloatingActionButton(
+          child: Icon( Icons.exposure_zero ),
+          onPressed: null
+        ),
+        Expanded(child: SizedBox()),
+        FloatingActionButton(
+          child: Icon( Icons.remove ),
+          onPressed: null
+        ),
+        SizedBox( width: 5.0,),
+        FloatingActionButton(
+          child: Icon( Icons.add ),
+          onPressed: null
+        ),
+        SizedBox(width: 30,),
+      ],
+    );
+    
+    
   }
 }
