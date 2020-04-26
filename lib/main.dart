@@ -1,8 +1,8 @@
-import 'package:curso_flutter/src/app.dart';
+import 'package:flutter/material.dart';
 
 // Importaciones de nuestros archivos
 // import 'src/app.dart'; Puede importarse de esta manera
-import 'package:flutter/material.dart';
+import 'package:curso_flutter/src/app.dart';
 
 
 void main() {
