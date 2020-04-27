@@ -14,6 +14,7 @@ class _ContadorPageState extends State {
   final _colorFondo = Colors.orange;
   int _conteo = 0;
 
+  // método que sirve para dibujar y redibujar el widget
   @override
   Widget build(BuildContext context) {
     return Scaffold(

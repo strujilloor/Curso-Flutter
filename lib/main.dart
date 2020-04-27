@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 // import 'src/app.dart'; Puede importarse de esta manera
 import 'package:curso_flutter/src/app.dart';
 
-
+// main.dart es el primer lugar donde nuestra aplicación es lanzada
 void main() {
 
   // primer comando, esta esperando un widget
-  runApp(new MyApp());
+  runApp(new MyApp()); // ejecuta la app
 
 }
 

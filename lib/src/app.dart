@@ -9,10 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build( context ) { // context: contiene la información del arbol de widgets
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Center(
+      debugShowCheckedModeBanner: false, // elimina el banner que nos dice que estamos en modo debug
+      home: Center( // center recibe un child
         // child: HomePage(),
-        child: ContadorPage(),
+        child: ContadorPage(), // home está lanzando nuestro ContadorPage
       ),
     );
   }
