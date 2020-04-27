@@ -1,6 +1,15 @@
-# curso_flutter
+# Curso Flutter
 
-A new Flutter project.
+Aplicación Contador desde cero.
+
+## Temas Puntuales
+
+- Stateless
+- Stateful
+- Scaffolds
+- Estilos
+- Botones
+- Manejo de estado básico
 
 ## Getting Started
 
