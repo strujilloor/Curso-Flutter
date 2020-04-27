@@ -17,6 +17,7 @@ class HomePageTemp extends StatelessWidget {
     );
   }
 
+  // Crea una lista de ListTile de manera tradicional
   List<Widget> _crearItems() {
 
     List<Widget> lista = new List<Widget>();
@@ -32,6 +33,7 @@ class HomePageTemp extends StatelessWidget {
     return lista;
   }
 
+  // Crea una lista de ListTile utilizando map y con menos código
   List<Widget> _crearItemsCorta(){
 
     return opciones.map( ( item ) {
